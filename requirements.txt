@@ -1,0 +1,16 @@
+langchain
+langchain-core
+langchain-community
+langchain-classic
+langchain-huggingface
+langchain-ollama
+sentence-transformers
+faiss-cpu
+pandas
+torch
+
+# FASTAPI 추가
+# api를 만드는 프레임워크
+fastapi
+# fastapi 애플리케이션을 실제 서버로 실행
+uvicorn[standard]

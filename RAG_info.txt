@@ -1,0 +1,10 @@
+각 파일별 역할 
+
+| 파일 | 언제 실행? | 역할 |
+|---|---|---|
+| `requirements.txt` | 처음 | 라이브러리 설치 |
+| `config.py` | 직접 실행 X | 모델/경로/Top-K 설정 |
+| `build_index.py` | **최초 1회** | CSV → KURE → FAISS |
+| `test_ollama.py` | 최초 확인 | LangChain ↔ Ollama 연결 확인 |
+| `rag_pipeline.py` | 직접 실행 X | **RAG 핵심 로직** |
+| `test_rag.py` | 개발 중 실행 | 전체 RAG 테스트 |

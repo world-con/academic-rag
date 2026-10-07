@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f6f7f9;
+
+  color: #222;
+}
+
+
+button,
+textarea {
+  font: inherit;
+}
+
+
+/* ==========================================================
+   App
+========================================================== */
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.header {
+  padding: 28px 40px;
+
+  background: white;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+.header h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+
+.header p {
+  margin-top: 8px;
+
+  margin-bottom: 0;
+
+  color: #666;
+}
+
+
+/* ==========================================================
+   3단 Layout
+========================================================== */
+
+.rag-layout {
+
+  display: grid;
+
+  grid-template-columns:
+    0.8fr
+    1.4fr
+    1fr;
+
+  gap: 20px;
+
+  padding: 24px;
+
+  height: calc(100vh - 105px);
+}
+
+
+/* ==========================================================
+   Panel
+========================================================== */
+
+.panel {
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  overflow-y: auto;
+}
+
+
+.panel h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
+
+/* ==========================================================
+   Question
+========================================================== */
+
+.question-form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.question-form textarea {
+
+  width: 100%;
+
+  min-height: 180px;
+
+  padding: 14px;
+
+  resize: vertical;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  line-height: 1.6;
+}
+
+
+.question-form textarea:focus {
+
+  border-color: #444;
+}
+
+
+.question-form button {
+
+  padding: 12px 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #222;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+.question-form button:disabled {
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* ==========================================================
+   Error
+========================================================== */
+
+.error-message {
+
+  margin-top: 16px;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #fff2f2;
+
+  color: #b00020;
+}
+
+
+/* ==========================================================
+   Question Result
+========================================================== */
+
+.question-result {
+
+  margin-top: 24px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eee;
+}
+
+
+.question-result h3 {
+
+  margin-top: 0;
+
+  font-size: 15px;
+}
+
+
+/* ==========================================================
+   Chunk
+========================================================== */
+
+.chunk-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+.chunk-card {
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 16px;
+
+  background: #fafafa;
+}
+
+
+.chunk-header {
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+
+.chunk-header span {
+
+  font-size: 13px;
+
+  word-break: break-all;
+
+  color: #555;
+}
+
+
+.chunk-meta {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  font-size: 12px;
+
+  color: #777;
+
+  margin-bottom: 10px;
+}
+
+
+.chunk-score {
+
+  padding: 10px;
+
+  margin-bottom: 12px;
+
+  border-radius: 6px;
+
+  background: #f0f1f3;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+.chunk-text {
+
+  margin: 0;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+
+  white-space: pre-wrap;
+}
+
+
+/* ==========================================================
+   Answer
+========================================================== */
+
+.answer-box {
+
+  line-height: 1.8;
+
+  white-space: pre-wrap;
+}
+
+
+/* ==========================================================
+   Empty
+========================================================== */
+
+.empty-text {
+
+  color: #888;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   반응형
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .rag-layout {
+
+    grid-template-columns: 1fr;
+
+    height: auto;
+  }
+
+
+  .panel {
+
+    min-height: 300px;
+  }
+}
